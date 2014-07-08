@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.abhi.datamodel.User" table="USER">
+ 		<id name="userId" column="USER_ID">
+ 			<generator class="assigned"/>
+ 		</id>
+		<property name="userName" column="USER_NAME"></property>
+ 		<property name="firstName" column="FIRST_NAME"></property>
+ 		<property name="middleName" column="MIDDLE_NAME"></property>
+ 		<property name="lastName" column="LAST_NAME"></property>
+ 	</class>
+ </hibernate-mapping>
